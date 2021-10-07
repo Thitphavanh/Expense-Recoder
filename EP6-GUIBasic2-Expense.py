@@ -12,7 +12,7 @@ GUI.geometry('600x700+500+0')
 # B1 = Button(GUI,text='Hello')
 # B1.pack(ipadx=50,ipady=20) # .pack ຕິດປຸ່ມເຂົ້າກັບ GUI  ຫຼັກ
 
-###################MENU###################
+#--------------------MUNU--------------------
 menubar = Menu(GUI)
 GUI.config(menu=menubar)
 
@@ -30,14 +30,17 @@ def About():
 helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Help',menu=helpmenu)
 helpmenu.add_cascade(label='About',command=About)
+
 # Donate
+def Donate():
+	messagebox.showinfo('Donate','BTC Address:')
 donatemenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Donate',menu=donatemenu)
+donatemenu.add_cascade(label='Donate',command=Donate)
 
 
 
-
-###########################################
+#----------------------------------------
 
 
 Tab = ttk.Notebook(GUI)
