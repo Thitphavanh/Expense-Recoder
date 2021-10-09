@@ -6,7 +6,7 @@ from datetime import datetime
 # ttk is theme of Tk
 
 GUI = Tk()
-GUI.title('ໂປຣແກຣມບັນທຶກຄ່າໃຊ້ຈ່າຍ by Hery')
+GUI.title('ໂປຣແກຣມບັນທຶກຄ່າໃຊ້ຈ່າຍ version.1.0 by Hery')
 GUI.geometry('600x700+500+0')
 
 # B1 = Button(GUI,text='Hello')
@@ -23,6 +23,7 @@ filemenu.add_command(label='Import CSV')
 filemenu.add_command(label='Export to Googlesheet')
 # Help
 def About():
+	print(menu=menubar)
 	messagebox.showinfo('About','ສະບາຍດີ ໂປຣແກຣມນີ້ແມ່ນໂປຣແກຣມບັນທຶກຂໍ້ມູນ\nສົນໃຈບໍລິຈາກເຮົາບໍ? ຂໍ 1 BTCພໍແລ້ວ\nBTC Address: abc')
 
 
